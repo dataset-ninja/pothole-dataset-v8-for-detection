@@ -44,7 +44,9 @@ def convert_and_upload_supervisely_project(
     class_name = "pothole"
     label_ext = ".txt"
     class_id = 0
-    teamfiles_dir = "/Users/almaz/Downloads/archive-11"
+    # teamfiles_dir = "/Users/almaz/Downloads/archive-11"
+    teamfiles_dir = "/4import/Pothole dataset v8 for detection/archive.zip"
+    dataset_dir = download_dataset(teamfiles_dir)
 
     def _convert_geometry(x_center, y_center, ann_width, ann_height, img_width, img_height):
         x_center = float(x_center)
@@ -139,7 +141,7 @@ def convert_and_upload_supervisely_project(
     
     project_meta = _upload_project_meta(api, project.id)
 
-    _process_dir(teamfiles_dir, project, project_meta, api)
+    _process_dir(dataset_dir, project, project_meta, api)
 
     # sly.logger.info('Deleting temporary app storage files...')
     # shutil.rmtree(storage_dir)
