@@ -91,7 +91,9 @@ def convert_and_upload_supervisely_project(
             elif split_name == "only_rainy_frames":
                 _process_dir(os.path.join(input_dir, split_name), project, project_meta, api)
             elif split_name in split_paths:
-                dataset = api.dataset.create(project.id, split_name)
+                dataset = api.dataset.get_info_by_name(project.id, split_name)
+                if dataset is None:
+                    dataset = api.dataset.create(project.id, split_name)
                 split_path = os.path.join(input_dir, split_name)
                 images_dir = os.path.join(split_path, images_dirname)
                 labels_dir = os.path.join(split_path, labels_dirname)
