@@ -1,6 +1,6 @@
-Dataset **Pothole dataset v8 for detection** can be downloaded in Supervisely format:
+Dataset **Pothole Dataset v8 for Detection** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/1/O/De/PetX589MXf7NVEQ1alnouKCxYPSbZ79QB9MogwMZPt8cxr30Ksn0zu2Ci6j1O9dCErR9sbgaQOeAnwj6B51eokZngVTufpg3MOsmKsvB7URSMjhBUTWbr16KxWDO.tar)
+ [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/K/C/zA/oNdgu1exsJyigqTU8B1AFvVGWMRL5HBCEfuT24oexUNRZd0SM3P0UjI9tfyDo9VYwuzcHiROgUR7mzLuC2Y60gBw0x9zLfnt1SEclNUuOIbBu4ky3RBnf1ln35w1.tar)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
@@ -11,6 +11,8 @@ pip install --upgrade dataset-tools
 ``` python
 import dataset_tools as dtools
 
-dtools.download(dataset='Pothole dataset v8 for detection', dst_path='~/dtools/datasets/Pothole dataset v8 for detection.tar')
+dtools.download(dataset='Pothole Dataset v8 for Detection', dst_dir='~/dataset-ninja/')
 ```
-The data in original format can be 🔗[downloaded here](https://www.dropbox.com/s/qvglw8pqo16769f/pothole_dataset_v8.zip?dl=1)
+Make sure not to overlook the [python code example](https://developer.supervisely.com/getting-started/python-sdk-tutorials/iterate-over-a-local-project) available on the Supervisely Developer Portal. It will give you a clear idea of how to effortlessly work with the downloaded dataset.
+
+The data in original format can be [downloaded here](hhttps://www.kaggle.com/datasets/denisg04/pothle-detect/download?datasetVersionNumber=1)
