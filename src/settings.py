@@ -13,15 +13,15 @@ from dataset_tools.templates import (
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = "Pothole dataset v8 for detection"
-PROJECT_NAME_FULL: str = "Pothole dataset v8 for detection"
+PROJECT_NAME: str = "Pothole Dataset v8 for Detection"
+PROJECT_NAME_FULL: str = "Pothole Dataset v8 for Detection"
 
 ##################################
 # * After uploading to instance ##
 ##################################
 LICENSE: License = License.CC0_1_0()
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Automotive(is_used=False)]
-CATEGORY: Category = Category.SelfDriving()
+CATEGORY: Category = Category.SelfDriving(is_original_dataset=False)
 
 CV_TASKS: List[CVTask] = [CVTask.ObjectDetection()]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.ObjectDetection()]
