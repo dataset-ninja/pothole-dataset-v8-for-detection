@@ -1,1 +1,1 @@
-Pothole dataset v8 for detection is under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) license.
+Pothole Dataset v8 for Detection is under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) license.
